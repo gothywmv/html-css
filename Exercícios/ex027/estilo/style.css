@@ -1,0 +1,23 @@
+@charset "UTF=8";
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root {
+    --cor0: rgba(255, 253, 231, 0.87);
+    --cor1: rgba(233, 171, 0, 0.87);
+    --cor2: rgba(255, 222, 35, 0.87);
+    --cor3: rgba(37, 37, 37, 0.87);
+    --cor4: rgba(37, 37, 37, 0.87);
+    --cor5: rgba(37, 37, 37, 0.87);
+
+    --fonte-padrao: 'Josefin Sans'
+}
+
+body {
+    background-color: rgba(37, 37, 37, 0.87);
+    font-family: var(--fonte-padrao)
+}
+
+header > h1 {
+    background-image: linear-gradient(to top --cor1)
+}
