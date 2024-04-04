@@ -4,257 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-        
-        body {
-            font-family: 'Josefin Sans';
-            background-color: rgb(26, 26, 26);
-            margin: 0px;
-        }
-
-        main {
-            background-color: rgb(253, 255, 227);
-            margin-top: 0px;
-            margin-right: 10%;
-            margin-left: 10%;
-            padding-bottom: 0%;
-            padding: 2em 2em 0em 2em;
-            text-align: justify;
-        }
-
-        h1 {
-            padding: 0%;
-            text-align: center;
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
-        }
-        
-        h2 {
-            background-image: linear-gradient(to right, rgba(179, 146, 0, 0.555), rgb(253, 255, 227));
-            padding: 1%;
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
-        }
-
-        h3 {
-            text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
-            font-size: 22px;
-        }
-        
-        nav > p {
-            text-align: center;
-        }
-        nav > a {
-            text-decoration: none;
-            color: rgb(0, 0, 0);
-            margin-right: 30px;
-        }
-
-        nav > a:hover {
-            text-decoration: underline;
-
-        }
-
-        header {
-            background-image: linear-gradient(to top, rgb(179, 146, 0), rgb(255, 238, 0));
-            margin: 0px;
-            padding: 2%;
-        }
-
-        .section {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 200px;
-            background-color: #f0f0f0;
-            padding: 10%;
-            margin-top: 0%;
-        }
-
-        .titulo  > p {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0%;
-            padding: 0%;
-        }
-
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        img:hover {
-            transform: scale(1.05);
-            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-        }
-        
-        a {
-            color: black;
-            transition-duration: 0.3s;
-        }
-
-    
-
-        a > p {
-            
-            color: black;
-            background-color: rgba(143, 129, 0, 0.671);
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-            color: rgb(230, 226, 0);
-        }
-
-        .tag > p {
-            margin: 5px;
-            padding: 0%;
-            font-size: 9px;
-        }
-
-        .container {
-            display: flex;
-            justify-content: space-around;
-            height: 35vh;
-            padding: 0%;
-            margin-top: 1%;
-            margin-bottom: 0%;
-        }
-
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            width: 300px;
-            height: 300px;
-            padding: 0%;
-            margin: 0%;
-        }
-
-        .image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 90%;
-            height: 90%;
-            object-fit: cover;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .image-container:hover .image {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transform: scale(1.1);
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-        }
-
-        .image-container::before {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.363);
-            backdrop-filter: blur(5px);
-            z-index: 1;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .image-container:hover::before {
-        opacity: 1;
-        }
-
-        .text {
-            font-size: 80%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: rgb(255, 255, 255);
-            z-index: 2;
-            opacity: 0;
-            transition: opacity 0.3s;
-        }
-
-        .image-container:hover .text {
-            opacity: 1;
-            box-shadow: 3 3 3 black;
-        }
-
-        .video > iframe {
-            position: absolute;
-            top: 5%;
-            left: 5%;
-            width: 90%;
-            height: 90%;
-        }
-
-        .video {
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.589), rgb(39, 39, 39));
-            margin-bottom: 30px;
-            margin: 0px -33.5px;
-            position: relative;
-            padding-bottom: 50%;
-        }
-
-        ol {
-            margin-top: 0%;
-        }
-    
-        nav a {
-             margin-right: 10px;
-        }
-
-        header {
-            padding: 5px;
-        }
-
-        footer a {
-            color: white;
-        }
-        footer {
-            background-color: rgba(0, 0, 0, 0.63);
-            color: white;
-            text-align: center;
-            font-size: 0.8em;
-            padding: 5px;
-            margin-bottom: 0px;
-            margin: 0px -33.5px;
-            position: flex;
-        }
-
-        footer a :hover {
-            color: #dba800;
-            text-decoration: none;
-
-        }
-        
-        aside {
-            background-color: #aa9759;
-            padding: 10px;
-            margin: 50px;
-            border-radius: 10px;
-        }
-
-        aside p {
-            font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -288,28 +38,22 @@
         <div class="image-container">
             <img class="image" src="imagens/icones/a1f708eac9d21acb7f2768fc6c9fc321.jpg" alt="Imagem 1">
             <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, molestias modi magni laudantium ex, velit enim at harum sit animi ipsam fugiat est, deserunt reprehenderit excepturi saepe laboriosam sunt. Nemo?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, molestias modi magni laudantium ex, velit enim at harum sit animi ipsam fugiat est, deserunsaepe laboriosam sunt. Nemo?
             </div>
         </div>
         <div class="image-container">
             <img class="image" src="imagens/icones/94b694aef41289b9c1200fc514c90ee2.jpg" alt="Imagem 2">
             <div class="text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptate optio quaerat itaque non reiciendis laudantium odio necessitatibus, libero natus a accusamus voluptas repudiandae maxime esse distinctio veniam debitis ratione!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptate optio quaerat itaque non reiciendis laudantium odio necessitatibus, libero natus a accusa
             </div>
         </div>
         <div class="image-container">
             <img class="image" src="imagens/icones/7efffc19da8b9869d6f3498b8aba4f51.jpg" alt="Imagem 3">
             <div class="text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repellendus hic delectus quaerat, doloremque soluta laudantium accusamus excepturi, dolor ipsa nobis non ratione, voluptatem minus vel eveniet reprehenderit officiis aperiam.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas repellendus hic delectus quaerat, doloremque soluta laudantium accusamus excepturi, 
             </div>
         </div>
-    </div>
-        <ol type="disc">
-            <li> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci quasi quae odio, culpa, ad explicabo dolorum commodi eveniet ab illo hic quod voluptates blanditiis, provident rem vel temporibus sequi? Obcaecati.</li>
-             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus fugit accusantium nemo magnam suscipit, perspiciatis sed aut doloremque quidem esse reiciendis quae error pariatur quod sunt vero fugiat deleniti illo.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae praesentium id, alias corporis at esse ipsum molestias porro eveniet asperiores perferendis delectus, ullam perspiciatis cumque magni ipsa veritatis quasi exercitationem.</li>
-            <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis alias quae dignissimos magnam! Autem impedit id, laboriosam deserunt fugit accusamus eveniet aliquam. Quos esse possimus magnam debitis natus asperiores praesentium!</li>
-        </ol>
+        </div>
         <h1>Demonstração</h1>   
         <div class="video">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/pYl9_qH1I78?si=Zo0mb-y3BkpiDOsx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
